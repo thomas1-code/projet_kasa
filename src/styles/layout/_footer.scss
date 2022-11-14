@@ -1,0 +1,26 @@
+.footer {
+  background-color: $color-backgroud;
+  color: $color-secondary;
+  padding: $padding-general;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  @include desktop-only {
+    justify-content: flex-end;
+    padding-bottom: 25px;
+    gap: 50px;
+  }
+  &__logo {
+    width: 122px;
+    height: 39px;
+  }
+  &__description {
+    font-size: 0.8em;
+    @include desktop-only {
+      font-size: 1.2em;
+    }
+  }
+}

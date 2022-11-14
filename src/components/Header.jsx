@@ -5,11 +5,11 @@ import Logo from '../assets/LOGO.png';
 const Header = () => {
   return (
     <header className="header">
-      <h1>
-        <img className="header__logo" src={Logo} alt="Logo Kasa" />
+      <h1 className="header__title">
+        <img className="header__logo" src={Logo} alt="Logo de Kasa" />
       </h1>
-      <nav>
-        <ul className="header__navbar">
+      <nav className="header__navbar">
+        <ul className="header__list">
           <NavLink to="/">
             <li className="header__links">Accueil</li>
           </NavLink>

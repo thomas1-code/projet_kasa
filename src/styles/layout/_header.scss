@@ -7,6 +7,7 @@
   justify-content: space-between;
   @include desktop-only {
     height: 68px;
+    margin-top: 40px;
   }
   &__title {
     width: 50%;
@@ -15,8 +16,8 @@
     width: 145px;
     height: 100%;
     @include desktop-only {
-      width: 180px;
-      height: 53px;
+      width: 200px;
+      height: 63px;
     }
   }
   &__navbar {

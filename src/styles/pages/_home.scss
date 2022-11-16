@@ -1,0 +1,14 @@
+.container-card {
+  margin-top: 20px;
+  padding: $padding-general;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+  @include desktop-only {
+    margin: 40px 5%;
+    padding: 50px;
+    background-color: $background-color-secondary;
+    border-radius: 25px;
+  }
+}

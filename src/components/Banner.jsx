@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Banner = ({ mobile, desktop, title, alt }) => {
+const Banner = ({ className, mobile, desktop, title, alt }) => {
   return (
-    <div className="banner">
+    <div className={className}>
       <picture>
         <source media="(max-width: 991px)" srcSet={mobile} />
         <source media="(min-width: 992px)" srcSet={desktop} />

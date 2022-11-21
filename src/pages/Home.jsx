@@ -17,6 +17,7 @@ const Home = () => {
       <Header />
       <main>
         <Banner
+          className="banner"
           mobile={BannerMobile}
           desktop={BannerDesktop}
           alt={bannerAlt}

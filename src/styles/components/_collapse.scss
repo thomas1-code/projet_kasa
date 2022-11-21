@@ -1,0 +1,48 @@
+.collapse {
+  margin-bottom: 20px;
+  @include desktop-only {
+    margin-bottom: 30px;
+    width: 82%;
+  }
+  &__button {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+    color: $color-secondary;
+    padding: 0 10px;
+    border-radius: 5px;
+    @include desktop-only {
+      height: 47px;
+      padding: 0 18px;
+    }
+  }
+  &__title {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: $font-primary;
+    @include desktop-only {
+      font-size: 1.8em;
+    }
+  }
+  &__symbol {
+    width: 15px;
+    height: 15px;
+    transform: rotate(0);
+    transition: transform 600ms ease-in-out 400ms;
+    @include desktop-only {
+      width: 24px;
+      height: 24px;
+    }
+    &--rotate {
+      transform: rotate(180deg);
+    }
+  }
+  &__description {
+    height: 0px;
+    overflow: hidden;
+    transition: height 600ms ease-in-out 400ms;
+  }
+}

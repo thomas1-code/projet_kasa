@@ -5,12 +5,13 @@
 @import './base/typography';
 
 @import './components/banner';
+@import './components/collapse';
 
 @import './layout/header';
 @import './layout/footer';
-@import './layout/error';
 @import './layout/card';
 
 @import './pages/home';
 @import './pages/about';
 @import './pages/accommodation';
+@import './pages/error';

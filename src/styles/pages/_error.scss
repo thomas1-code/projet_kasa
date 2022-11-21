@@ -1,0 +1,43 @@
+.error {
+  @include flexbox-center;
+  flex-direction: column;
+  color: $color-primary;
+  &__title {
+    margin-top: 215px;
+    font-size: 6em;
+    font-weight: 700;
+    @include desktop-only {
+      margin-top: 210px;
+      font-size: 18em;
+    }
+  }
+  &__description {
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: $font-primary;
+    text-align: center;
+    line-height: 25px;
+    @include desktop-only {
+      margin-top: 60px;
+      white-space: nowrap;
+      font-size: 2.2em;
+    }
+  }
+  // line break removal
+  .error__description br {
+    @include desktop-only {
+      display: none;
+    }
+  }
+  &__link {
+    margin-top: 133px;
+    font-size: 0.9em;
+    font-weight: $font-primary;
+    text-decoration: underline;
+    @include desktop-only {
+      height: 160px;
+      margin-top: 182px;
+      font-size: 1.1em;
+    }
+  }
+}

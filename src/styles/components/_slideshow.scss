@@ -1,0 +1,82 @@
+.slideshow {
+  width: 100%;
+  height: 255px;
+  position: relative;
+  padding: $padding-primary;
+  margin-top: 30px;
+  @include desktop-only {
+    height: 415px;
+    padding: $padding-secondary;
+    margin-top: 25px;
+  }
+  &__active {
+    height: 100%;
+    animation: slide 400ms ease-in-out;
+  }
+  &__inactive {
+    width: 0;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    @include desktop-only {
+      border-radius: 25px;
+    }
+  }
+  &__container {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    @include desktop-only {
+      width: 86%;
+    }
+  }
+  &__next,
+  &__prev {
+    width: 24px;
+    height: 24px;
+    opacity: 0.87;
+    cursor: pointer;
+    @include flexbox-center;
+    @include desktop-only {
+      width: 96px;
+      height: 120px;
+    }
+  }
+  &__arrow {
+    width: 20px;
+    height: 20px;
+    @include desktop-only {
+      width: 79px;
+      height: 79px;
+    }
+  }
+  &__counter {
+    display: none;
+    @include desktop-only {
+      width: 100%;
+      position: absolute;
+      bottom: 6%;
+      @include flexbox-center;
+      color: $color-secondary;
+      font-weight: $font-primary;
+      font-size: 0.9em;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

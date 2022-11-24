@@ -1,0 +1,26 @@
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__title {
+    width: min-content;
+    font-size: 0.75em;
+    font-weight: $font-primary;
+    color: $color-primary;
+    text-align: right;
+    @include desktop-only {
+      font-size: 18px;
+    }
+  }
+  &__image {
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    object-fit: cover;
+    @include desktop-only {
+      width: 4em;
+      height: 4em;
+      border-radius: 2em;
+    }
+  }
+}

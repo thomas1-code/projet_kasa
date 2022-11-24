@@ -7,17 +7,26 @@
     @include flexbox-center;
     flex-wrap: wrap;
   }
-
+  &__title {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: $font-primary;
+    @include desktop-only {
+      font-size: 1.8em;
+    }
+  }
   &__description {
     background-color: $background-color-secondary;
-    padding: 20px 7px 50px 10px;
+    padding: 23px 7px 52px 12px;
+    margin-top: -5px;
     border-radius: 5px;
     font-size: 0.75em;
     color: $color-primary;
     line-height: 17px;
     @include desktop-only {
+      padding: 36px 20px 19px 18px;
+      margin-top: -9px;
       font-size: 1.5em;
-      padding: 30px 20px 19px 18px;
       line-height: 34px;
     }
   }

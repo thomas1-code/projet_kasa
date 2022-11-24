@@ -1,0 +1,106 @@
+.accommodation {
+  justify-content: space-between;
+  padding: $padding-primary;
+  margin-top: 15px;
+  @include desktop-only {
+    padding: $padding-secondary;
+    margin-top: 30px;
+  }
+  &__container {
+    @include desktop-only {
+      display: flex;
+    }
+  }
+  &__header {
+    @include desktop-only {
+      width: 70%;
+    }
+  }
+  &__title {
+    font-size: 1.1em;
+    color: $color-primary;
+    font-weight: $font-primary;
+    @include desktop-only {
+      font-size: 2.2em;
+    }
+  }
+  &__location {
+    margin-top: 5px;
+    font-size: 0.85em;
+    color: $color-primary;
+    font-weight: $font-primary;
+    @include desktop-only {
+      font-size: 1.1em;
+    }
+  }
+  &__tags {
+    display: flex;
+    gap: 10px;
+  }
+  &__item {
+    width: 84px;
+    height: 18px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: $color-primary;
+    color: $color-secondary;
+    text-align: center;
+    font-size: 0.65em;
+    font-weight: $font-primary;
+    overflow: hidden;
+    line-height: 14px;
+    @include desktop-only {
+      width: 115px;
+      height: 25px;
+      border-radius: 10px;
+      padding: 3px;
+      font-size: 0.9em;
+      line-height: 19px;
+    }
+  }
+  &__additionnal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    @include desktop-only {
+      width: 30%;
+      margin-top: 0;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+  }
+  &__collapse {
+    margin-top: 16px;
+    @include desktop-only {
+      margin-top: 24px;
+      display: flex;
+      gap: 75px;
+    }
+  }
+  &__collapse-title {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: $font-primary;
+    @include desktop-only {
+      font-size: 18px;
+    }
+  }
+  &__collapse-description {
+    background-color: $background-color-secondary;
+    border-radius: 5px;
+    padding: 23px 6px 1px 12px;
+    margin-top: -5px;
+    font-size: 0.75em;
+    font-weight: 400;
+    color: $color-primary;
+    line-height: 17px;
+    @include desktop-only {
+      border-radius: 10px;
+      padding: 40px 12px 27px 20px;
+      margin-top: -10px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}

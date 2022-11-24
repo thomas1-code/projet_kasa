@@ -1,0 +1,6 @@
+.tags {
+  margin-top: 10px;
+  @include desktop-only {
+    margin-top: 20px;
+  }
+}

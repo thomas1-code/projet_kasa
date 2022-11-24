@@ -20,14 +20,6 @@
       padding: 0 18px;
     }
   }
-  &__title {
-    font-family: 'Montserrat';
-    font-size: 1em;
-    font-weight: $font-primary;
-    @include desktop-only {
-      font-size: 1.8em;
-    }
-  }
   &__symbol {
     width: 15px;
     height: 15px;

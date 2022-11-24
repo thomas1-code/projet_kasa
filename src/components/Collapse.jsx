@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import Arrow from '../assets/arrow.png';
 
 const Collapse = (props) => {
   const [open, setOpen] = useState(false);
@@ -9,15 +10,15 @@ const Collapse = (props) => {
   return (
     <div className="collapse">
       <button className="collapse__button" onClick={toggle}>
-        <h2 className="collapse__title">{props.label}</h2>
+        <h2 className={props.className}>{props.label}</h2>
         <img
           className={
             open
               ? 'collapse__symbol collapse__symbol--rotate'
               : 'collapse__symbol'
           }
-          src={props.symbol}
-          alt={props.alt}
+          src={Arrow}
+          alt="Symbole d'un chevron"
         />
       </button>
       <div

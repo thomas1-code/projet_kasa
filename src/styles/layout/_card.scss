@@ -3,6 +3,10 @@
   height: 255px;
   margin-bottom: 20px;
   position: relative;
+  @include tablet {
+    width: 340px;
+    height: 300px;
+  }
   @include desktop-only {
     width: 340px;
     height: 340px;

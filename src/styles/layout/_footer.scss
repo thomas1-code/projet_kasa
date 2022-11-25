@@ -3,11 +3,12 @@
   color: $color-secondary;
   padding: $padding-primary;
   height: 208px;
-  display: flex;
+  @include flexbox-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 25px;
+  @include tablet {
+    gap: 35px;
+  }
   @include desktop-only {
     justify-content: flex-end;
     padding-bottom: 25px;
@@ -19,6 +20,9 @@
   }
   &__description {
     font-size: 0.8em;
+    @include tablet {
+      font-size: 1em;
+    }
     @include desktop-only {
       font-size: 1.2em;
     }

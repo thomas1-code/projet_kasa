@@ -8,8 +8,11 @@
     font-weight: $font-primary;
     color: $color-primary;
     text-align: right;
+    @include tablet {
+      font-size: 1em;
+    }
     @include desktop-only {
-      font-size: 18px;
+      font-size: 1.1em;
     }
   }
   &__image {
@@ -17,6 +20,11 @@
     height: 2em;
     border-radius: 1em;
     object-fit: cover;
+    @include tablet {
+      width: 3em;
+      height: 3em;
+      border-radius: 1.5em;
+    }
     @include desktop-only {
       width: 4em;
       height: 4em;

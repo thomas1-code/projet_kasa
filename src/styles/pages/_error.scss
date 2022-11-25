@@ -6,8 +6,11 @@
     margin-top: 215px;
     font-size: 6em;
     font-weight: 700;
-    @include desktop-only {
+    @include tablet {
+      font-size: 10em;
       margin-top: 210px;
+    }
+    @include desktop-only {
       font-size: 18em;
     }
   }
@@ -17,15 +20,18 @@
     font-weight: $font-primary;
     text-align: center;
     line-height: 25px;
+    @include tablet {
+      margin-top: 30px;
+      font-size: 1.6em;
+    }
     @include desktop-only {
       margin-top: 60px;
-      white-space: nowrap;
       font-size: 2.2em;
     }
   }
   // line break removal
   .error__description br {
-    @include desktop-only {
+    @include tablet {
       display: none;
     }
   }
@@ -34,6 +40,10 @@
     font-size: 0.9em;
     font-weight: $font-primary;
     text-decoration: underline;
+    @include tablet {
+      margin-top: 155px;
+      font-size: 1em;
+    }
     @include desktop-only {
       height: 160px;
       margin-top: 182px;

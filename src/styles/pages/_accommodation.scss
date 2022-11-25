@@ -1,18 +1,20 @@
 .accommodation {
-  justify-content: space-between;
   padding: $padding-primary;
   margin-top: 15px;
+  @include tablet {
+    margin-top: 20px;
+  }
   @include desktop-only {
     padding: $padding-secondary;
     margin-top: 30px;
   }
   &__container {
-    @include desktop-only {
+    @include tablet {
       display: flex;
     }
   }
   &__header {
-    @include desktop-only {
+    @include tablet {
       width: 70%;
     }
   }
@@ -20,6 +22,9 @@
     font-size: 1.1em;
     color: $color-primary;
     font-weight: $font-primary;
+    @include tablet {
+      font-size: 1.6em;
+    }
     @include desktop-only {
       font-size: 2.2em;
     }
@@ -29,6 +34,9 @@
     font-size: 0.85em;
     color: $color-primary;
     font-weight: $font-primary;
+    @include tablet {
+      font-size: 1em;
+    }
     @include desktop-only {
       font-size: 1.1em;
     }
@@ -49,11 +57,16 @@
     font-weight: $font-primary;
     overflow: hidden;
     line-height: 14px;
+    @include tablet {
+      width: 99px;
+      height: 21px;
+      padding: 3px;
+      font-size: 0.7em;
+    }
     @include desktop-only {
       width: 115px;
       height: 25px;
       border-radius: 10px;
-      padding: 3px;
       font-size: 0.9em;
       line-height: 19px;
     }
@@ -63,7 +76,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
-    @include desktop-only {
+    @include tablet {
       width: 30%;
       margin-top: 0;
       flex-direction: column-reverse;
@@ -82,8 +95,11 @@
     font-family: 'Montserrat';
     font-size: 1em;
     font-weight: $font-primary;
+    @include tablet {
+      font-size: 1.1em;
+    }
     @include desktop-only {
-      font-size: 18px;
+      font-size: 1.4em;
     }
   }
   &__collapse-description {
@@ -95,11 +111,15 @@
     font-weight: 400;
     color: $color-primary;
     line-height: 17px;
+    @include tablet {
+      font-size: 0.9em;
+      line-height: 21px;
+    }
     @include desktop-only {
       border-radius: 10px;
       padding: 40px 12px 27px 20px;
       margin-top: -10px;
-      font-size: 18px;
+      font-size: 1.1em;
       line-height: 25px;
     }
   }

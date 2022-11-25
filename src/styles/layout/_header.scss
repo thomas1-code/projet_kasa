@@ -5,6 +5,10 @@
   padding: $padding-primary;
   display: flex;
   justify-content: space-between;
+  @include tablet {
+    height: 57px;
+    margin-top: 30px;
+  }
   @include desktop-only {
     height: 68px;
     margin-top: 40px;
@@ -16,6 +20,9 @@
   &__logo {
     width: 145px;
     height: 100%;
+    @include tablet {
+      width: 170px;
+    }
     @include desktop-only {
       width: 200px;
       height: 63px;
@@ -23,6 +30,9 @@
   }
   &__navbar {
     width: 140px;
+    @include tablet {
+      width: 165px;
+    }
     @include desktop-only {
       width: 220px;
     }
@@ -38,9 +48,12 @@
     font-weight: $font-primary;
     text-transform: uppercase;
     font-size: 0.8em;
+    @include tablet {
+      font-size: 1.1em;
+      text-transform: none;
+    }
     @include desktop-only {
       font-size: 1.4em;
-      text-transform: none;
     }
     &:hover {
       animation: header-line 400ms ease-in-out 200ms forwards;

@@ -5,11 +5,16 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 0 20px;
+  @include tablet {
+    background-color: $background-color-secondary;
+    margin: 30px 5%;
+    padding: 25px;
+    border-radius: 10px;
+  }
   @include desktop-only {
     gap: 50px;
     margin: 40px 7%;
     padding: 50px;
-    background-color: $background-color-secondary;
     border-radius: 25px;
   }
 }

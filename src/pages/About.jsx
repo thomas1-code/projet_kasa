@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 import ImageMobile from '../assets/gustavo_alves.png';
-import ImageDesktop from '../assets/kalen_emsley.png';
+import ImageTablet from '../assets/kalen_emsley.png';
 
 const imageAlt = 'Paysage de montagnes enneigés';
 
@@ -16,7 +16,7 @@ const About = () => {
         <Banner
           className="banner banner--about"
           mobile={ImageMobile}
-          desktop={ImageDesktop}
+          tablet={ImageTablet}
           alt={imageAlt}
         />
         <section className="about">

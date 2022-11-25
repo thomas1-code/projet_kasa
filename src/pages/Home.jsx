@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import BannerMobile from '../assets/img_banner_mobile.png';
-import BannerDesktop from '../assets/img_banner_desktop.png';
+import BannerTablet from '../assets/img_banner_desktop.png';
 import Card from '../components/Card';
 import Products from '../data/data-card.json';
 
@@ -19,7 +19,7 @@ const Home = () => {
         <Banner
           className="banner"
           mobile={BannerMobile}
-          desktop={BannerDesktop}
+          tablet={BannerTablet}
           alt={bannerAlt}
           title={bannerTitle}
         />

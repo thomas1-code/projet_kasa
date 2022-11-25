@@ -6,6 +6,7 @@
   @include tablet {
     width: 340px;
     height: 300px;
+    max-width: none;
   }
   @include desktop-only {
     width: 340px;
